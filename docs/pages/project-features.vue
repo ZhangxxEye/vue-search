@@ -13,7 +13,7 @@
                     @tags-changed="newTags => tags = newTags"
             />
             <search v-model="searchText"></search>
-            <P>{{searchText}}</P>
+            <p>{{searchText}}</p>
         </div>
     </div>
 </template>

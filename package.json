@@ -1,24 +1,21 @@
 {
-  "name": "@johmun/vue-tags-input",
-  "version": "2.0.1",
-  "author": "Johannes Munari <johannesm@hotmail.de>",
+  "name": "nat-vue-search",
+  "version": "1.0.0",
+  "author": "ZhangxxEye",
   "license": "MIT",
-  "description": "A tags input component for VueJS with autocompletion, custom validation, templating and much more",
-  "homepage": "http://www.vue-tags-input.com",
+  "description": "a input for searching",
+  "homepage": "",
   "private": false,
   "keywords": [
     "javascript",
     "vue",
-    "tags",
-    "vue-tags-input",
-    "vue-component",
-    "autocomplete"
+    "search"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/JohMun/vue-tags-input.git"
+    "url": "git@github.com:ZhangxxEye/vue-search.git"
   },
-  "main": "dist/vue-tags-input.js",
+  "main": "dist/vue-search.js",
   "scripts": {
     "dev": "npm run docs",
     "docs": "cross-env NODE_ENV=development webpack-dev-server --hot --config ./build/docs.config.js",

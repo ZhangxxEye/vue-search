@@ -8,6 +8,7 @@
 </template>
 <script>
     export default {
+        name: 'VueSearch',
         props: {
             placeholder: {
                 default: '请输入查询信息',
