@@ -13,16 +13,10 @@
 <script>
 import './app-style.scss';
 import './vue-tags-input-dark.scss';
-import ElNavbar from '@components/el-navbar';
 import axois from 'axios';
-import GithubIcon from '@components/icons/github';
 
 export default {
   name: 'App',
-  components: {
-    ElNavbar,
-    GithubIcon,
-  },
   data() {
     return {
       navVisible: false,

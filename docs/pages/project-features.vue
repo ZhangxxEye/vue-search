@@ -1,17 +1,7 @@
 <template lang="html">
     <div id="project-features">
-        <h1 class="title">Vue Tags Input</h1>
-        <p>A generic UI component to input tags, with a couple of features</p>
+        <h1 class="title">Vue 搜索框</h1>
         <div class="features">
-            <vue-tags-input
-                    v-model="tag"
-                    class="tags-input"
-                    :tags="tags"
-                    :autocomplete-items="items"
-                    :allow-edit-tags="true"
-                    :placeholder="'Add a feature'"
-                    @tags-changed="newTags => tags = newTags"
-            />
             <search v-model="searchText"></search>
             <p>{{searchText}}</p>
         </div>
@@ -19,55 +9,18 @@
 </template>
 
 <script>
-    import VueTagsInput from '@johmun/vue-tags-input';
-    import search from '../../search/index';
+    import search from 'vue-search';
 
     export default {
         name: 'ProjectFeatures',
         components: {
-            VueTagsInput,
             search
         },
         data() {
             return {
-                tag: '',
-                tags: [],
-                searchText: '',
-                features: [
-                    'No dependencies',
-                    'Custom validation rules',
-                    'Hooks: Before adding, Before deleting ...',
-                    'Edit tags after creation (click me)',
-                    'Fast setup',
-                    'Works with Vuex',
-                    'Small size: 34kb minified (css included) | gzipped 9kb',
-                    'Autocompletion',
-                    'Customization options',
-                    'Templating',
-                    'Delete tags on backspace',
-                    'Add tags on paste',
-                    'Examples & Docs',
-                    'More ...',
-                ],
-                todo: [
-                    'Animation support',
-                    'Autocomplete Highlighting',
-                    'Groups',
-                ],
-            };
-        },
-        computed: {
-            items() {
-                return this.todo
-                    .filter(t => new RegExp(this.tag, 'i').test(t))
-                    .map(i => {
-                        return {text: `Todo: ${i}`};
-                    });
-            },
-        },
-        created() {
-            this.tags = this.features.map(text => ({text}));
-        },
+                searchText: ''
+            }
+        }
     };
 </script>
 
