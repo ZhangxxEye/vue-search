@@ -1,5 +1,6 @@
 # vue-search
 用于搜索的input组件
+![](//cdn.51talk.com/apollo/images/5304470fcb7302b97e43f30047a3bf28.png)
 ## install
 NPM
 ```
